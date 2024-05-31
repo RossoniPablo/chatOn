@@ -95,8 +95,8 @@ const handleLogin = (event) => {
   login.style.display = 'none'
   chat.style.display = 'flex'
 
-  //Criando conexão
-  websocket = new WebSocket('ws://localhost:8080')
+  //Criando conexão, utilizando render para subir online
+  websocket = new WebSocket('ws://chaton-backend-7x1m.onrender.com')
   websocket.onmessage = processMessage
 }
 
